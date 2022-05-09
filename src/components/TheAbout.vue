@@ -84,7 +84,7 @@ export default {
 
 .container { 
   display:flex;
-  margin: 10rem auto;
+  margin: 7rem auto;
   justify-content: center;
 }
 
