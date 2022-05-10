@@ -1,16 +1,18 @@
 <script>
 import About from './components/TheAbout.vue'
 import Greetings from './components/Greetings.vue'
+import Navi from './components/NavGuide.vue'
 
 export default {
   components: {
     About,
-    Greetings
+    Greetings,
+    Navi
   },
   data () {
     return {
       msgh1: ["Hello,", "Ola,", "Hai,"],
-      msgh2: ["Welcome to my portfolio!", "Welcome to my little project!", 
+      msgh2: ["Welcome to my personal portfolio!", "Welcome to my little project!", 
       "Welcome to my Vue application!"]
     }
   },
@@ -24,31 +26,28 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <Greetings :msgh1="msgh1" :msgh2="msgh2"/>
-    </div> 
-  </header>
-  <main v-cloak>
-    <About />
-  </main>
+  <Navi />
+  <div class="main-wrapper">
+    <Greetings :msgh1="msgh1" :msgh2="msgh2"/>
+    <main>
+      <About />
+    </main>
+  </div>
 </template>
 
 <style>
 @import './assets/base.css';
 
 #app {
-    margin: 0 auto;
-    padding: 2rem;
+  margin: 0 auto;
 }
 
-header {
-  display: block;
-  line-height: 3rem;
-  margin: 2rem auto;
+.main-wrapper {
+  padding: 1rem 0;
+  width: 100%;
 }
 
 main {
-  height: inherit;
+  margin: 5rem auto;
 }
 </style>

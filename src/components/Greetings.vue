@@ -39,24 +39,32 @@ export default {
 </script>
 
 <template>
-  <div class="greeting">
-    <!-- Make new wrapper for h1 and h2 such that can position: absolute -->
-    <div class="greeting wrapper">
-      <transition name="slide-up">
-        <h1 :key="n">{{msgh1[n]}}</h1>  
-      </transition> 
+  <header>
+    <div class="greeting" id="greeting">
+      <!-- Make new wrapper for h1 and h2 such that can position: absolute -->
+      <div class="greeting wrapper">
+        <transition name="slide-up">
+          <h1 :key="n">{{msgh1[n]}}</h1>  
+        </transition> 
+      </div>
+      <div class="greeting wrapper">
+        <transition>
+        <h2 :key="m">{{ msgh2[m] }}</h2>
+        </transition>
+      </div>
     </div>
-    <div class="greeting wrapper">
-      <transition>
-      <h2 :key="m">{{ msgh2[m] }}</h2>
-      </transition>
-    </div>
-  </div>
+  </header>
 </template>
 
 <style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+header {
+  display: block;
+  line-height: 3rem;
+  margin: 2rem auto;
+}
 
 .greeting {
   margin: 0 auto;
@@ -78,8 +86,7 @@ export default {
   font-weight: 300; 
   font-size: 2.5rem;
   font-family: 'Koulen', cursive;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   left: 0;
   right: 0;
 }
