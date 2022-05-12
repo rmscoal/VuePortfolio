@@ -2,12 +2,14 @@
 import About from './components/TheAbout.vue'
 import Greetings from './components/Greetings.vue'
 import Navi from './components/NavGuide.vue'
+import Skills from './components/Skills.vue'
 
 export default {
   components: {
     About,
     Greetings,
-    Navi
+    Navi,
+    Skills
   },
   data () {
     return {
@@ -31,6 +33,7 @@ export default {
     <Greetings :msgh1="msgh1" :msgh2="msgh2"/>
     <main>
       <About id="greeting"/>
+      <Skills />
     </main>
   </div>
 </template>
