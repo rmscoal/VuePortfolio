@@ -40,7 +40,7 @@ export default {
 
 <template>
   <header>
-    <div class="greeting" id="greeting">
+    <div class="greeting">
       <!-- Make new wrapper for h1 and h2 such that can position: absolute -->
       <div class="greeting wrapper">
         <transition name="slide-up">

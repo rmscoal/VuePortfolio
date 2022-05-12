@@ -30,7 +30,7 @@ export default {
   <div class="main-wrapper">
     <Greetings :msgh1="msgh1" :msgh2="msgh2"/>
     <main>
-      <About />
+      <About id="greeting"/>
     </main>
   </div>
 </template>

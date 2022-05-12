@@ -141,7 +141,7 @@ export default {
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-enter-active {
-  transition: all .3s ease;
+  transition: all .5s ease;
 }
 .slide-leave-active {
   transition: all .5s cubic-bezier(.52,.22,.19,1.38);

@@ -54,5 +54,17 @@ export default {
 .nav > a {
     text-decoration: none;
     color: var(--color-text);
+    cursor: pointer;
+    border-radius: 0.8rem;
+    padding: 0.3rem;
+    transition: background-color 0.2s ease-out, font-weight 0.5s;
+
+}
+
+.nav > a:hover {
+    color:white !important;
+    font-weight:500;
+    background-color: #e86601; 
+    scale: 1.1;
 }
 </style>

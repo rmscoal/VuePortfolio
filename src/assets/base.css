@@ -49,6 +49,10 @@
       --color-text: var(--vt-c-text-dark-2);
     }
   }
+  
+  html {
+    scroll-behavior:smooth;
+  }
 
   *,
   *::before,
